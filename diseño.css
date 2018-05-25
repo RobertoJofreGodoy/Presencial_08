@@ -1,0 +1,17 @@
+.logo {
+	border-radius: 15px;
+	border: solid 5px white;
+}
+.header{
+	background-image: url("images/fondo.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.cuadros{
+	padding: 2%;
+}
+
+body{
+	margin: 0px;
+}
+
