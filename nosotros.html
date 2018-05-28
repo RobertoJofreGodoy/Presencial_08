@@ -11,56 +11,131 @@
 
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="diseño.css">
+
 </head>
 
-<!-- NAVBAR -->
-
-	<nav class="navbar navbar-inverse navbar-fixed-top">
-	  <div class="container-fluid">
-	    <div class="navbar-header">
-	      <a class="navbar-brand" href="#">WebSiteName</a>
-	    </div>
-	    <ul class="nav navbar-nav">
-	      <li><a href="#">Inicio</a></li>
-	      <li class="active"><a href="#">Nosotros</a></li>
-	      <li><a href="#">Noticias</a></li>
-	    </ul>
-	  </div>
-	</nav>
-
 <body>
+  <!-- HEADER -->
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        </button>
+        <a class="navbar-brand" href="#">Fundación Niños y Cáncer</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">Inicio</a></li>
+          <li class="active"><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="noticias.html">Noticias</a></li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+  <div class="jumbotron header">
+    <div class="container">
+      <div class="col-md-2 col-md-offset-1">
+        <img class="img-responsive logo" src="./images/logo.png">
+      </div>
+        <h1>Fundación Niño y Cáncer</h1>
+    </div>
+  </div>
+
+
 
 	<!-- CONTENIDO-->
 
 	<div>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+	</div>
+
+
+	<!--FOOTER-->
+
+	<footer class="container-fluid header">
+
+		<h2 class="text-center">Contacto </h2><br><br>
+		<div class="col-md-12">
+			<div class="col-md-1 col-md-offset-1">
+				<strong> 
+					<p>Dirección</p>
+					<p>Teléfonos:</p>
+					<p>Fax:</p>
+					<p>Cta. Cte:</p>
+					<p>RUT:</p>
+					<p>Email:</p>
+				</strong> 
+			</div>
+				   
+			<div class="col-md-4">
+				<p>Tupungato 10070 Vitacura, Santiago de Chile</p>
+				<p>22170821 - 22170811</p>
+				<p>22170820</p>
+				<p>Banco BCI N° 85999997</p>
+				<p>72.169.900-5</p>
+				<p>fundacion@ninoycancer.cl</p>
+			</div>
 		
 
-	</div>
+		<!--FORMULARIO-->
+
+		<form role="form" id="Formulario" action="../php/contacto2.php" method="POST" class="col-md-5">
+                <div class="form-group">
+                    <label class="control-label" for="Nombre">Nombres</label>
+                    <input type="text" class="form-control" id="Nombre" name="Nombre" placeholder="Introduzca su nombre" required autofocus />
+                </div>            
+                <div class="form-group">
+                    <label class="control-label" for="Correo">Dirección de Correo Electrónico</label>
+                    <input type="email" class="form-control" id="Correo" name="Correo" placeholder="Introduzca su correo electrónico" required />
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="Mensaje">Mensaje</label>
+                    <textarea rows="5" cols="30" class="form-control" id="Mensaje" name="Mensaje" placeholder="Introduzca su mensaje" required ></textarea>
+                </div>
+                <div class="form-group">                
+                    <input type="submit" class="btn btn-primary" value="Enviar">
+                    <input type="reset" class="btn btn-default" value="Limpiar">                
+                </div>
+                <div id="respuesta" style="display: none;"></div>
+            </form>
+         </div>    
 
 
-	<!-- FOOTER-->
-	<footer>
-	<div class="panel-footer">
-		<p class="">Contacto</p>
-		<div class="col-md-8 col-md-offset-1">
-		<div class="col-md-2">
-			<p>Contacto:</p>
-			<p>Teléfonos:</p>
-			<p>Fax:</p>
-			<p>Cta. Cte:</p>
-			<p>RUT:</p>
-			<p>Email:</p>
-		</div>
-		<div class="col-md-10">
-			<p>Tupungato 10070 Vitacura, Santiago de Chile</p>
-			<p>22170821 - 22170811</p>
-			<p>22170820</p>
-			<p>Banco BCI N° 85999997</p>
-			<p>72.169.900-5</p>
-			<p>fundacion@ninoycancer.cl</p>
-		</div>
-	</div>
-	</div>
+
+			<!-- Mapa -->
+			<h3 class="text-center"> <strong>DIRECCIÓN </strong></h3>
+			<div id="contact" class="map">
+				<iframe width="100%" height="100%" src="https://maps.google.com/maps?width=100%&height=600&hl=es&coord=-33.383879,-70.537151&q=Tupungato%2010070%20Vitacura%2C%20Santiago%20de%20Chile%20+(Fundaci%C3%B3n%20Ni%C3%B1o%20y%20C%C3%A1ncer)&ie=UTF8&t=&z=14&iwloc=B&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.mapsdirections.info/crear-un-mapa-de-google/">Crear mapa interactivo</a> by <a href="https://www.mapsdirections.info/">Mapa España</a></iframe>
+			</div><br />
+				<small>
+					<a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
+				</small>
+			</iframe>
+
 	</footer>
 </body>
 </html>
