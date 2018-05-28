@@ -21,7 +21,6 @@ body{
 	max-height:450px;
 }
 
-
 .navbar {
 	margin-bottom: 0;
 	border-radius: 0;
@@ -34,4 +33,3 @@ footer {
 	.carousel-caption {
 		display: none; 
 	}
-
